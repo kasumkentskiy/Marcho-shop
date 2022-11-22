@@ -1,0 +1,30 @@
+{
+  "name": "gulp-2023",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "smutalibov",
+  "license": "ISC",
+  "devDependencies": {
+    "@fancyapps/ui": "^4.0.31",
+    "browser-sync": "^2.27.10",
+    "del": "^6.1.1",
+    "fslightbox": "^3.3.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "ion-rangeslider": "^2.3.1",
+    "jquery": "^3.6.1",
+    "jquery-form-styler": "^2.0.2",
+    "mixitup": "^3.3.1",
+    "rateyo": "^2.3.2",
+    "sass": "^1.55.0",
+    "slick-carousel": "^1.8.1"
+  }
+}

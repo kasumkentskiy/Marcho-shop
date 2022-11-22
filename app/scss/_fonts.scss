@@ -1,0 +1,52 @@
+// quicksand font
+@font-face {
+  font-family: 'Quicksand-Medium';
+  src: local('Quicksand-Medium'),
+    url('../fonts/Quicksand-Medium.woff') format('woff2'),
+    url('../fonts/Quicksand-Medium.woff') format('woff');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand-Regular';
+  src: local('Quicksand-Regular'),
+    url('../fonts/Quicksand-Regular.woff') format('woff2'),
+    url('../fonts/Quicksand-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+
+// roboto font
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: local('Roboto-Regular'),
+    url('../fonts/Roboto-Regular.woff') format('woff2'),
+    url('../fonts/Roboto-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand-Medium';
+  src: local('Quicksand-Medium'),
+    url('../fonts/Quicksand-Medium.woff') format('woff2'),
+    url('../fonts/Quicksand-Medium.woff') format('woff');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand-Bold', sans-serif;
+  src: local('Quicksand-Bold'),
+    url('../fonts/Quicksand-Bold.woff') format('woff2'),
+    url('../fonts/Quicksand-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}

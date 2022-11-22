@@ -1,0 +1,54 @@
+$accent: #fe3e57;
+
+$default: #8d8d8d;
+
+$title: #29282d;
+
+$bg: #f6f6f6;
+
+
+%quicksand-400 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+}
+
+%quicksand-500 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+
+%roboto-400 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+%roboto-500 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+%roboto-700 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+
+%checkbox-hidden,
+%radio-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+
+%btn {
+  cursor: pointer;
+  padding: 12px 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: $accent;
+  @extend %roboto-400;
+  box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+}
