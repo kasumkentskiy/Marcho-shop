@@ -32,20 +32,20 @@
 }
 
 @font-face {
-  font-family: 'Quicksand-Medium';
-  src: local('Quicksand-Medium'),
-    url('../fonts/Quicksand-Medium.woff') format('woff2'),
-    url('../fonts/Quicksand-Medium.woff') format('woff');
+  font-family: 'Roboto-Medium';
+  src: local('Roboto-Medium'),
+    url('../fonts/Roboto-Medium.woff') format('woff2'),
+    url('../fonts/Roboto-Medium.woff') format('woff');
   font-style: normal;
   font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Quicksand-Bold', sans-serif;
-  src: local('Quicksand-Bold'),
-    url('../fonts/Quicksand-Bold.woff') format('woff2'),
-    url('../fonts/Quicksand-Bold.woff') format('woff');
+  font-family: 'Roboto-Bold', sans-serif;
+  src: local('Roboto-Bold'),
+    url('../fonts/Roboto-Bold.woff') format('woff2'),
+    url('../fonts/Roboto-Bold.woff') format('woff');
   font-style: normal;
   font-weight: 700;
   font-display: swap;

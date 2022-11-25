@@ -2286,7 +2286,63 @@
 
 .blog-page {
   padding: 120px 60px;
+
   /* .blog__inner */
+  &__item--slider {
+    .blog-page__item-box {
+      margin-top: -8px;
+    }
+  }
+
+  &__slider {
+
+    .slick-next,
+    .slick-prev {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 5;
+      width: 40px;
+      height: 40px;
+      background-color: $accent;
+      border: none;
+      border-radius: 50%;
+
+      box-shadow: 0px 7px 20px 0px rgba(254, 62, 87, 0.3);
+
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      outline: none;
+      cursor: pointer;
+
+      path {
+        fill: #fff;
+      }
+
+    }
+
+
+    .slick-next {
+      right: 40px;
+    }
+
+    .slick-prev {
+      left: 40px;
+    }
+
+    .slick-disabled {
+      background: #fff;
+      box-shadow: 0px 7px 20px 0px rgba(168, 168, 168, 0.3);
+
+      path {
+        fill: $accent;
+      }
+    }
+
+
+  }
 
   &__inner {
     display: flex;
@@ -2308,11 +2364,20 @@
 
   &__item {
     margin-bottom: 60px;
+
+    &.blog-page__item--without-image {
+      border-top: 1px solid #ececec;
+      box-shadow: 0px 20px 60px 0px rgba(202, 202, 202, 0.35);
+    }
   }
 
 
-  &__link {
+
+  &__item-link {
     display: block;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
   }
 
   &__img {
@@ -2325,13 +2390,146 @@
     border: 1px solid #ececec;
     border-top: none;
     padding: 40px;
+
   }
 
   &__item-title {
     color: $title;
+    font-size: 22px;
+    @extend %roboto-500;
+    margin-bottom: 20px;
+    transition: all .2s ease-in;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  .blog-box {
+    justify-content: start;
+
+    &__author {
+      margin-right: 30px;
+    }
+  }
+
+}
+
+.person {
+  border: 1px solid #ececec;
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 40px 25px;
+  /* .person__img */
+
+  &__img {
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin: 0 auto 35px;
+  }
+
+  /* .person__name */
+
+  &__name {
+    color: $title;
+    @extend %roboto-700;
+    font-size: 18px;
+  }
+
+  /* .person__position */
+
+  &__position {
+    color: $accent;
+    margin-bottom: 25px;
+  }
+
+  /* .person__text */
+
+  &__text {
+    margin-bottom: 25px;
+  }
+
+  /* .person__social */
+
+  &__social {}
+
+  /* .person__social-link */
+
+  &__social-link {
+    margin: 0 8px;
+
+    path {
+      transition: all .2s linear;
+      fill: $default;
+    }
+
+    &:hover {
+      path {
+
+        fill: $accent;
+      }
+
+    }
   }
 }
 
+.latest-post {
+  padding: 35px 30px 40px;
+  border: 1px solid #ececec;
+  margin-bottom: 40px;
+
+  &__title {
+    @extend %roboto-400;
+    font-size: 22px;
+    color: $title;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    display: flex;
+
+    &+.latest-post__item {
+      border-top: 1px solid #ececec;
+      padding-top: 20px;
+    }
+  }
+
+  &__img-link {
+    display: block;
+    min-width: 80px;
+    margin-right: 20px;
+  }
+
+  &__img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+
+  &__title-link {
+    @extend %roboto-400;
+    font-size: 18px;
+    color: $title;
+    line-height: 28px;
+  }
+  &__date {
+    padding-left: 26px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 5px;
+      background-image: url(../images/icons/calendar.svg);
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
 
 
 
