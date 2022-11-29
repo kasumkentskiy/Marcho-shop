@@ -193,6 +193,7 @@
 
   &__form {
     margin-top: 27px;
+    display: flex;
   }
 
   /* .footer-top__form-input */
@@ -204,6 +205,7 @@
     border: none;
     padding: 12px 10px 12px 15px;
     box-shadow: 0px 7px 20px 0px rgba(192, 192, 192, 0.3);
+    margin-right: 5px;
 
     &::placeholder {
       color: $default;
