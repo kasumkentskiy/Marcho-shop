@@ -1,0 +1,69 @@
+// video-fashion-section
+
+.video-fashion {
+  background-color: $bg;
+  background-image: url(../images/decor/pattern.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  padding: 125px 0;
+  /* .video-fashion__inner */
+
+  &__inner {
+    display: flex;
+  }
+
+  /* .video-fashion__popup */
+
+  &__popup {
+    margin-right: 65px;
+    max-width: 530px;
+    width: 100%;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+  }
+
+  /* .video-fashion__play */
+
+  &__play {}
+
+  /* .video-fashion__content */
+
+  &__content {
+    max-width: 570px
+  }
+
+  /* .video-fashion__suptitle */
+
+  &__suptitle {
+    padding-top: 75px;
+    font-size: 22px;
+    color: $accent;
+  }
+
+  /* .video-fashion__title */
+
+  &__title {
+    text-align: left
+  }
+
+  /* .video-fashion__text */
+
+  &__text {
+    margin-bottom: 55px;
+  }
+
+  /* .video-fashion__link */
+
+  &__link {
+    @extend %btn;
+  }
+}
