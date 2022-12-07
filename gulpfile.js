@@ -21,9 +21,9 @@ function browsersync() {
 
 function nunjucks() {
   return src ('app/*.njk')
-  .pipe (nunjucksRender())
-  .pipe (dest('app'))
-  .pipe(browserSync.stream())
+    .pipe (nunjucksRender())
+    .pipe (dest('app'))
+    .pipe(browserSync.stream())
 }
 
 

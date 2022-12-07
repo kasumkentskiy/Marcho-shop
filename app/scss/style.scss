@@ -34,6 +34,7 @@
 
   &__title {
     font-size: 48px;
+    line-height: 52px;
     color: #28384f;
     @extend %roboto-700;
     margin-bottom: 40px;
@@ -81,9 +82,9 @@
     margin-right: 30px;
   }
 
-  /* .shop__content */
-
-  &__content {}
+  &__filter-btn {
+    display: none;
+  }
 }
 
 
@@ -1622,6 +1623,7 @@
   &__form-box {
     display: flex;
     justify-content: space-between;
+
     input {
       width: 330px;
     }
@@ -1656,7 +1658,7 @@
 
   &__form-btn {
     @extend %btn;
-   
+
     border: none;
   }
 }
