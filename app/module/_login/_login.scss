@@ -1,0 +1,83 @@
+
+.modal {
+  padding-top: 100px;
+  max-width: 570px;
+  margin: 0 auto 115px;
+  /* .modal__links */
+
+  &__links {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  /* .modal__link */
+
+  &__link {
+    font-size: 22px;
+    color: #909090;
+    @extend %roboto-400;
+    text-transform: uppercase;
+    margin: 0 30px;
+  }
+
+  /* .modal__link--active */
+
+  &__link--active {
+    color: $accent
+  }
+
+  /* .modal__form */
+
+  &__form {}
+
+  /* .modal__label */
+
+  &__label {
+    margin-bottom: 30px;
+    display: block;
+  }
+
+  /* .modal__input */
+
+  &__input {
+    margin-top: 4px;
+    height: 60px;
+    padding: 0 15px;
+    background-color: $bg;
+    border: none;
+    display: block;
+    width: 100%;
+  }
+
+
+  &__btn {
+    background-color: $title;
+    @extend %roboto-400;
+    text-transform: uppercase;
+    display: block;
+    color: #fff;
+    width: 100%;
+    padding: 14px 0;
+    border: none;
+    cursor: pointer;
+  }
+
+
+  /* .modal__error */
+
+  &__error {
+    color: $accent;
+    margin-top: 12px;
+    display: inline-block;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 375px) {
+  .modal__link {
+    margin: 0 20px;
+  }
+}

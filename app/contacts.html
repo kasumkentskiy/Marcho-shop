@@ -5,13 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/login.min.css">
+  <link rel="stylesheet" href="css/contacts.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Marcho</title>
 </head>
 
 <body>
 
-   <header class="header">
+  <header class="header">
   <div class="container">
     <div class="header__inner">
       <a class="logo" href="#">
@@ -61,61 +62,81 @@
 </header> 
 
   <main class="main">
-       <section class="top">
-  <div class="top__container" style="background-image: url('images/top-bg.jpg');">
-    <div class="container">
-      <h2 class="top__title title">Log in</h2>
-      <div class="breadcrumbs">
-        <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">
-              Home
-            </a>
-          </li>
-          <li class="breadcrumbs__item">
-            <span class="breadcrumbs__link" >
-              Log in
-            </span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section> 
-    <section class="modal">
-      <div class="container">
-
-        <div class="modal__links">
-          <a class="modal__link modal__link--active" href="#">REGISTER</a>
-          <a class="modal__link" href="#">LOGIN</a>
+    <section class="top">
+      <div class="top__container" style="background-image: url('images/top-bg.jpg');">
+        <div class="container">
+          <h2 class="top__title title">CONTACT US</h2>
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <span class="breadcrumbs__link">
+                  CONTACT
+                </span>
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <form class="modal__form" action="#">
-
-          <label class="modal__label">
-            Username or email address*
-            <input class="modal__input" type="text" required>
-          </label>
-          <label class="modal__label">
-            Password*
-            <input class="modal__input" type="password" required>
-          </label>
-          <p class="modal__text">A password will be sent to your email addres</p>
-          <p class="modal__text">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.</p>
-          <label class="modal__label">
-            <input type="checkbox">
-            Agree with Terms & Conditions
-          </label>
-          <button class="modal__btn" type="submit">
-            REGISTER
-          </button>
-          
-        </form>
       </div>
     </section>
+
+
+    <section class="map">
+      <div class="container">
+
+        <div id="map"></div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <div class="contact__inner">
+          <div class="contact__info">
+            <h3 class="contact__info-title">Feel Free Don’t Hesitate To Contact With Us</h3>
+            <p class="contact__info-text">
+              Lorem ipsum dolor sit amet, consectetur adingn elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo maecnaacnrao cumsan lacus vel
+              facilisis.
+            </p>
+            <ul class="contact__info-list">
+              <li class="contact__info-item">
+                <a class="contact__info-phone" href="tel:+01234567896">+0-123-456-7896</a>
+                <a class="contact__info-phone" href="tel:+01234567896">+0-123-456-7896</a>
+              </li>
+              <li class="contact__info-item contact__info-item--location">
+                Ranlon Market 789 Road, <br>
+                Market Street, Newyork
+              </li>
+              <li class="contact__info-item contact__info-item--email">
+                <div>yourmailaddress@gmail.com</div>
+                <div>companymail@gmail.com</div>
+              </li>
+            </ul>
+          </div>
+          <form class="contact__form" action="#">
+            <p class="contact__form-title">
+              Contact Form
+            </p>
+
+            <div class="contact__form-box">
+              <input class="contact__form-input" type="text" placeholder="Your Name" >
+              <input class="contact__form-input" type="text" placeholder="Your E-mail Address">
+            </div>
+            <input class="contact__form-input" type="text" placeholder="Subject">
+            <textarea class="contact__form-textarea" placeholder="Message here"></textarea>
+            <button class="contact__form-btn" type="submit">SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-<footer class="footer">
+  <footer class="footer">
   <div class="container">
     <div class="footer-top">
       <div class="footer-top__item footer-top__contact">
@@ -281,7 +302,246 @@
   </div>
 </footer> 
 
+  <script>
+    let map;
 
+    function initMap() {
+      map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: 40.691355593073965, lng: -74.04405683320793 },
+        zoom: 11,
+        styles: [
+          {
+            "featureType": "all",
+            "elementType": "geometry.stroke",
+            "stylers": [
+              {
+                "visibility": "simplified"
+              }
+            ]
+          },
+          {
+            "featureType": "administrative",
+            "elementType": "all",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "administrative",
+            "elementType": "labels",
+            "stylers": [
+              {
+                "visibility": "simplified"
+              },
+              {
+                "color": "#a31645"
+              }
+            ]
+          },
+          {
+            "featureType": "landscape",
+            "elementType": "all",
+            "stylers": [
+              {
+                "weight": "3.79"
+              },
+              {
+                "visibility": "on"
+              },
+              {
+                "color": "#ffecf0"
+              }
+            ]
+          },
+          {
+            "featureType": "landscape",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "visibility": "on"
+              }
+            ]
+          },
+          {
+            "featureType": "landscape",
+            "elementType": "geometry.stroke",
+            "stylers": [
+              {
+                "visibility": "on"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "all",
+            "stylers": [
+              {
+                "visibility": "simplified"
+              },
+              {
+                "color": "#a31645"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "saturation": "0"
+              },
+              {
+                "lightness": "0"
+              },
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "geometry.stroke",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.business",
+            "elementType": "all",
+            "stylers": [
+              {
+                "visibility": "simplified"
+              },
+              {
+                "color": "#d89ca8"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.business",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "visibility": "on"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.business",
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "visibility": "on"
+              },
+              {
+                "saturation": "0"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.business",
+            "elementType": "labels",
+            "stylers": [
+              {
+                "color": "#a31645"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.business",
+            "elementType": "labels.icon",
+            "stylers": [
+              {
+                "visibility": "simplified"
+              },
+              {
+                "lightness": "84"
+              }
+            ]
+          },
+          {
+            "featureType": "road",
+            "elementType": "all",
+            "stylers": [
+              {
+                "saturation": -100
+              },
+              {
+                "lightness": 45
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "all",
+            "stylers": [
+              {
+                "visibility": "simplified"
+              }
+            ]
+          },
+          {
+            "featureType": "road.arterial",
+            "elementType": "labels.icon",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "transit",
+            "elementType": "all",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "all",
+            "stylers": [
+              {
+                "color": "#d89ca8"
+              },
+              {
+                "visibility": "on"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "visibility": "on"
+              },
+              {
+                "color": "#fedce3"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "labels",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          }
+        ]
+      });
+    }
+
+    window.initMap = initMap;
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly" defer></script>
   <script src="js/main.min.js"></script>
 </body>
 
